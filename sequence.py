@@ -20,6 +20,7 @@ class Sequence(object):
         self.cols = len(self.b) + 1
 
     def make_matrix(self):
+        """ construct score and way matrix to operate with it """
         self.matrix = [[0 for i in range(self.cols)] for i in range(self.rows)]
         self.way = copy.deepcopy(self.matrix)
         self.max_score, self.max_pos = 0, None
@@ -28,6 +29,7 @@ class Sequence(object):
                 self._fill(i, j)
 
     def _fill(self, i, j):
+        """ fill the M[i, j] cell with correct score and append its parent into way matrix """
         if self.a[i-1] == self.b[j-1]:
             k = self.match
         else:
@@ -45,7 +47,8 @@ class Sequence(object):
         if optimal[0] > self.max_score:
             self.max_score, self.max_pos = optimal
 
-    def make_lightweight_matrix(self):  # an algo designed to just make max_score
+    def make_lightweight_matrix(self):
+        """ an alghoritm just to know the max_score"""
         self.matrix = [[0 for i in range(self.cols)] for i in range(2)]
         self.max_score = 0
         for i in range(1, self.rows):  # заполняем
@@ -67,6 +70,7 @@ class Sequence(object):
             self.max_score = opt_score
 
     def visualize(self):
+        """ a debug tool """
         for i in self.matrix:
             print(i)
         print()
@@ -76,6 +80,7 @@ class Sequence(object):
         print(self.max_score)
 
     def make_cool_matrix(self):
+        """ a way vizualization with cell scores """
         self.cool_matrix = [['✤' for i in range(self.cols)] for i in range(self.rows)]
         for i in range(1, self.rows):
             ci = i - 1
@@ -109,6 +114,7 @@ class Sequence(object):
 
 
     def build(self):
+        """ find the most optimal local alingment part """
         self.seq1 = []
         self.seq2 = []
         move = self.max_pos
@@ -131,8 +137,6 @@ class Sequence(object):
             else:
                 self.seq1_start = row_coord
             move = next_move
-        # self.seq1 = list(reversed(self.seq1))
-        # self.seq2 = list(reversed(self.seq2))
         self.seq1.reverse()
         self.seq2.reverse()
 
@@ -148,6 +152,7 @@ class Sequence(object):
                 self.mismatches[mismatch_index] = 1
 
     def __gt__(self, other):
+        """ overload to enable max() of sequences by their max_score"""
         if isinstance(other, Sequence):
             return self.max_score > other.max_score
         else:
