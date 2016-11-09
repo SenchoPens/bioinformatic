@@ -5,14 +5,17 @@ import argparse
 import os
 
 
-def main():
+def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input', action='store', dest='input_file', type=argparse.FileType('r'))
     parser.add_argument('-d', '--debug', action='store_true', dest='debug')
     parser.add_argument('-g', '--graph', action='store', dest='graph_viz')
     parser.add_argument('-o', '--output-graph-file', action='store', dest='output')
     parser.add_argument('-k', '--kmers', action='store', dest='k')
-    args = parser.parse_args()
+    return parser.parse_args()
+
+def main():
+    args = parse_args()
     if args.debug:
         k = 3
         reads2 = ['ACGGT', 'CGGTTT', 'GTTTTA', 'TTACGC', 'GCTTA', 'ACGCT']
