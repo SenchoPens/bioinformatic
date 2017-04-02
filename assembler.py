@@ -14,6 +14,7 @@ def parse_args():
     parser.add_argument('-k', '--kmers', action='store', dest='k')
     return parser.parse_args()
 
+
 def main():
     args = parse_args()
     if args.debug:

@@ -18,8 +18,10 @@ def main():
 
 
 def test():
-    Sequence('AGCACACA', 'ACACACTA')
+    seq = Sequence('AGCACACA', 'ACACACTA')
+    seq.concatenate()
+    print(seq.result)
 
 
 if __name__ == '__main__':
-    main()
+    test()

@@ -1,30 +1,46 @@
 import copy
+from typing import List, Dict, Tuple
+
+
+Matrix = List[List[int]]
+Seq = List[str]
+Pos = Tuple[int, int]
 
 
 def test():
-    a = Sequence('ACCTGACTCCAG', 'CCAGATTGCAA')
+    #a = Sequence('ACCTGACTCCAG', 'CCAGATTGCAA')
+    a = Sequence('AC', 'CA')
     a.make_matrix()
-    a.build()
+    a.visualize()
     a.make_cool_matrix()
+    a.build()
     print(a.seq1, a.seq2)
+    a.concatenate()  # expected: ACA
+    print(a.result)
 
 
 class Sequence(object):
     def __init__(self, a, b, match=1, dismatch=-1, indel=-1):
-        self.a = a
-        self.b = b
-        self.match = match
-        self.dismatch = dismatch
-        self.indel = indel
-        self.rows = len(self.a) + 1
-        self.cols = len(self.b) + 1
+        self.a: str = a
+        self.b: str = b
+
+        self.match: int = match  # reward for match
+        self.dismatch: int = dismatch  # fine for dismatch
+        self.indel: int = indel  # fine for indel
+
+        self.rows: int = len(self.a) + 1
+        self.cols: int = len(self.b) + 1
+
+        self.matrix: Matrix
+        self.way: Matrix
+        self.max_pos: Pos = tuple()
+        self.max_score: int = 0
 
     def make_matrix(self):
         """ construct score and way matrix to operate with it """
         self.matrix = [[0 for i in range(self.cols)] for i in range(self.rows)]
         self.way = copy.deepcopy(self.matrix)
-        self.max_score, self.max_pos = 0, None
-        for i in range(1, self.rows):  # заполняем
+        for i in range(1, self.rows):  # filling
             for j in range(1, self.cols):
                 self._fill(i, j)
 
@@ -34,24 +50,26 @@ class Sequence(object):
             k = self.match
         else:
             k = self.dismatch
+
         diag = self.matrix[i-1][j-1] + k, (i-1, j-1)
         up = self.matrix[i-1][j] + self.indel, (i-1, j)
         left = self.matrix[i][j-1] + self.indel, (i, j-1)
         optimal = max(diag, up, left)
         if optimal[0] <= 0:
-            optimal = (0, 0)
+            optimal = (0, optimal[1])
         opt_score = optimal[0]
         self.matrix[i][j] = opt_score
         opt_pos = optimal[1]
         self.way[i][j] = opt_pos
-        if optimal[0] > self.max_score:
+        if opt_score > self.max_score:
             self.max_score, self.max_pos = optimal
 
+    ''' Candidate for deleting - not been used
     def make_lightweight_matrix(self):
-        """ an alghoritm just to know the max_score"""
-        self.matrix = [[0 for i in range(self.cols)] for i in range(2)]
+        """ algorithm to know the max_score (without memoising way) """
+        self.matrix: Matrix = [[0 for j in range(self.cols)] for i in range(self.rows)]
         self.max_score = 0
-        for i in range(1, self.rows):  # заполняем
+        for i in range(1, self.rows):  # filling
             for j in range(1, self.cols):
                 self._lightweight_fill(i, j)
             self.matrix[1], self.matrix[0] = self.matrix[0], self.matrix[1]
@@ -68,20 +86,22 @@ class Sequence(object):
         self.matrix[1][j] = opt_score
         if opt_score >= self.max_score:
             self.max_score = opt_score
+    '''
 
     def visualize(self):
         """ a debug tool """
+        print('-' * self.cols * 3)
         for i in self.matrix:
             print(i)
-        print()
+        print('-' * self.cols * 3)
         for i in self.way:
             print(i)
-        print(self.max_pos)
-        print(self.max_score)
+        print('max_pos: ', self.max_pos)
+        print('max_score: ', self.max_score)
 
     def make_cool_matrix(self):
         """ a way vizualization with cell scores """
-        self.cool_matrix = [['✤' for i in range(self.cols)] for i in range(self.rows)]
+        self.cool_matrix: List[List[str]] = [['✤' for i in range(self.cols)] for i in range(self.rows)]
         for i in range(1, self.rows):
             ci = i - 1
             # self.cool_matrix[ci][0] = '✤'
@@ -112,26 +132,25 @@ class Sequence(object):
                 print(point, end=' ')
             print()
 
-
     def build(self):
-        """ find the most optimal local alingment part """
-        self.seq1 = []
-        self.seq2 = []
-        move = self.max_pos
+        """ find the most optimal local alignement part """
+        self.seq1: Seq = []
+        self.seq2: Seq = []
+        move: Pos = self.max_pos
         self.seq2_end = move[1]
         while move != 0:
             row_coord = move[0]
             col_coord = move[1]
             next_move = self.way[row_coord][col_coord]
             if next_move != 0:
-                direction = row_coord - next_move[0], col_coord - next_move[1]
-                if direction == (1, 1):   # диагонально
+                direction: Pos = (row_coord - next_move[0], col_coord - next_move[1])
+                if direction == (1, 1):   # diagonal
                     self.seq1.append(self.a[row_coord - 1])
                     self.seq2.append(self.b[col_coord - 1])
-                elif direction == (1, 0):  # вверх
+                elif direction == (1, 0):  # up
                     self.seq1.append(self.a[row_coord - 1])
                     self.seq2.append('-')
-                elif direction == (0, 1):  # влево
+                elif direction == (0, 1):  # left
                     self.seq1.append('-')
                     self.seq2.append(self.b[col_coord - 1])
             else:
@@ -160,7 +179,7 @@ class Sequence(object):
 
 
 def reverse_complemental(read):
-    compl = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
+    compl: Dict[str, str] = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
     rc_read = list(map(lambda x: compl[x], read))
     rc_read.reverse()
     rc_read = ''.join(rc_read)
