@@ -15,8 +15,7 @@ def test():
     a.make_cool_matrix()
     a.build()
     print(a.seq1, a.seq2)
-    a.concatenate()  # expected: ACA
-    print(a.result)
+    print(a.concatenate())  # expected: ACA
 
 
 class Sequence(object):
@@ -106,8 +105,8 @@ class Sequence(object):
             ci = i - 1
             # self.cool_matrix[ci][0] = '✤'
             for j in range(self.cols):
-                next_move = self.way[i][j]
-                if next_move == 0 or self.matrix[ci][j] == 0:
+                next_move: Pos = self.way[i][j]
+                1if next_move == 0 or self.matrix[ci][j] == 0:
                     symbol = '✤'
                 else:
                     direction = i - next_move[0], j - next_move[1]
@@ -144,7 +143,7 @@ class Sequence(object):
             next_move = self.way[row_coord][col_coord]
             if next_move != 0:
                 direction: Pos = (row_coord - next_move[0], col_coord - next_move[1])
-                if direction == (1, 1):   # diagonal
+                if direction == (1, 1):  # diagonal
                     self.seq1.append(self.a[row_coord - 1])
                     self.seq2.append(self.b[col_coord - 1])
                 elif direction == (1, 0):  # up
@@ -161,8 +160,8 @@ class Sequence(object):
 
     def concatenate(self):
         self.equal = ''.join(self.seq1)
-        self.result = self.a[:self.seq1_start] + self.equal + self.b[self.seq2_end:]
-    
+        return self.a[:self.seq1_start] + self.equal + self.b[self.seq2_end:]
+
     def mismatches(self):
         self.mismatches = dict()
         for i, (nucl1, nucl2) in enumerate(zip(self.seq1, self.seq2)):
