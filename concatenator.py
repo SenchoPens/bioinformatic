@@ -19,6 +19,8 @@ def main():
 
 def test():
     seq = Sequence('AGCACACA', 'ACACACTA')
+    seq.make_matrix()
+    seq.build()
     seq.concatenate()
     print(seq.result)
 

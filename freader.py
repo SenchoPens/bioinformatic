@@ -30,3 +30,5 @@ def read_nex(file):
     for line in file:
         res.append(line[line.find(' '):])
     return res
+
+

@@ -1,3 +1,7 @@
+__doc__ = """
+Local Alignement - Smith-Waterman algorithm
+"""
+
 import copy
 from typing import List, Dict, Tuple
 
@@ -9,19 +13,21 @@ Pos = Tuple[int, int]
 
 def test():
     #a = Sequence('ACCTGACTCCAG', 'CCAGATTGCAA')
-    a = Sequence('AC', 'CA')
+    a = Sequence('ACA', 'AGCA')
     a.make_matrix()
     a.visualize()
     a.make_cool_matrix()
     a.build()
     print(a.seq1, a.seq2)
-    print(a.concatenate())  # expected: ACA
+    a.concatenate()  # expected: A
+    print(a.result)
 
 
 class Sequence(object):
-    def __init__(self, a, b, match=1, dismatch=-1, indel=-1):
+    def __init__(self, a, b, glob=False, match=1, dismatch=-1, indel=-1):
         self.a: str = a
         self.b: str = b
+        self.glob = glob
 
         self.match: int = match  # reward for match
         self.dismatch: int = dismatch  # fine for dismatch
@@ -39,9 +45,17 @@ class Sequence(object):
         """ construct score and way matrix to operate with it """
         self.matrix = [[0 for i in range(self.cols)] for i in range(self.rows)]
         self.way = copy.deepcopy(self.matrix)
+        if self.glob:
+            self._fill_borders()
         for i in range(1, self.rows):  # filling
             for j in range(1, self.cols):
                 self._fill(i, j)
+
+    def _fill_borders(self):
+        for i in range(self.cols):
+            self.matrix[0][i] = self.indel * i
+        for i in range(self.rows):
+            self.matrix[i][0] = self.indel * i
 
     def _fill(self, i, j):
         """ fill the M[i, j] cell with correct score and append its parent into way matrix """
@@ -54,7 +68,7 @@ class Sequence(object):
         up = self.matrix[i-1][j] + self.indel, (i-1, j)
         left = self.matrix[i][j-1] + self.indel, (i, j-1)
         optimal = max(diag, up, left)
-        if optimal[0] <= 0:
+        if (not self.glob) and (optimal[0] <= 0):
             optimal = (0, optimal[1])
         opt_score = optimal[0]
         self.matrix[i][j] = opt_score
@@ -63,7 +77,6 @@ class Sequence(object):
         if opt_score > self.max_score:
             self.max_score, self.max_pos = optimal
 
-    ''' Candidate for deleting - not been used
     def make_lightweight_matrix(self):
         """ algorithm to know the max_score (without memoising way) """
         self.matrix: Matrix = [[0 for j in range(self.cols)] for i in range(self.rows)]
@@ -85,7 +98,6 @@ class Sequence(object):
         self.matrix[1][j] = opt_score
         if opt_score >= self.max_score:
             self.max_score = opt_score
-    '''
 
     def visualize(self):
         """ a debug tool """
@@ -106,25 +118,26 @@ class Sequence(object):
             # self.cool_matrix[ci][0] = '✤'
             for j in range(self.cols):
                 next_move: Pos = self.way[i][j]
-                1if next_move == 0 or self.matrix[ci][j] == 0:
+                if next_move == 0 or self.matrix[ci][j] == 0:
                     symbol = '✤'
                 else:
                     direction = i - next_move[0], j - next_move[1]
-                    if self.way[next_move[0]][next_move[1]] == 0:
-                        symbol = '✤'
-                    elif direction == (1, 1):  # диагонально
+                    if direction == (1, 1):  # диагонально
                         symbol = '↖'
                     elif direction == (1, 0):  # вверх
                         symbol = '↑'
                     elif direction == (0, 1):  # влево
                         symbol = '←'
+                    else:
+                        symbol = '✤'
                 self.cool_matrix[ci][j - 1] = symbol
         for i in self.matrix[0]:
             print(i, end=' ')
+
         print()
         for points, directs in zip(self.matrix[1:], self.cool_matrix):
-            print('    ', end='')
-            for direct in directs[1:]:
+            print('  ', end='')
+            for direct in directs:
                 print(direct, end=' ')
             print()
             for point in points:
@@ -135,7 +148,10 @@ class Sequence(object):
         """ find the most optimal local alignement part """
         self.seq1: Seq = []
         self.seq2: Seq = []
-        move: Pos = self.max_pos
+        if self.glob:
+            move: Pos = (self.rows - 1, self.cols - 1)
+        else:
+            move: Pos = self.max_pos
         self.seq2_end = move[1]
         while move != 0:
             row_coord = move[0]
@@ -160,7 +176,7 @@ class Sequence(object):
 
     def concatenate(self):
         self.equal = ''.join(self.seq1)
-        return self.a[:self.seq1_start] + self.equal + self.b[self.seq2_end:]
+        self.result = self.a[:self.seq1_start] + self.equal + self.b[self.seq2_end:]
 
     def mismatches(self):
         self.mismatches = dict()

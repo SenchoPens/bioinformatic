@@ -1,6 +1,5 @@
 import argparse
 import string
-import tree
 from collections import defaultdict
 from freader import read_nex
 
