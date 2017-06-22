@@ -1,6 +1,9 @@
-from freader import read_fq
+from freader import read_fq, read_dna
 from sequence import reverse_complemental
 from collections import defaultdict
+from typing import List
+from tqdm import tqdm
+
 import argparse
 import os
 
@@ -17,18 +20,24 @@ def parse_args():
 
 def main():
     args = parse_args()
+
     if args.debug:
         k = 3
-        reads2 = ['ACGGT', 'CGGTTT', 'GTTTTA', 'TTACGC', 'GCTTA', 'ACGCT']
-        reads = ['ACTGA']
+        args.graph_viz = 'debug_graph_scheme.dot'
+        args.output = 'debug_graph.pdf'
+        reads3 = ['ACGGT', 'CGGTTT', 'GTTTA', 'TTACGC', 'GCTTA', 'ACGCT']
+        reads = ['ACCTG', 'CTGATC', 'ATCACC']
+        reads2 = ['ACTGA']  # expected: tcagt and actga
     else:
         reads = read_fq(args.input_file)
         k = int(args.k)
+
     graph = Graph(reads, k)
     graph.graph()
     graph.zip()
+
     if args.graph_viz:
-        graph.graph_viz(args.graph_viz)
+        graph.graph_viz_reads(args.graph_viz)
         if args.output:
             os.popen('dot %s -T %s -o %s' % (args.graph_viz, 'pdf', args.output))
 
@@ -47,27 +56,13 @@ class Graph(object):
             self.peaks.add(read[i:i+self.k])
         self.peaks.add(read[-self.k:])
 
-    def graph2(self):
-        for read in self.reads:
-            self._process(read)
-            self._process(reverse_complemental(read))
-        self.g = defaultdict(dict)
-        self.g_reverse = defaultdict(list)
-        for peak in self.peaks:
-            for another_peak in self.peaks:
-                if peak[1:] == another_peak[:-1]:
-                    edge = peak + another_peak[-1]
-                    if edge in self.edges:
-                        self.g[peak][another_peak] = (edge, self.edges[edge])
-                        self.g_reverse[another_peak].append(peak)
-
     def graph(self):
         for read in self.reads:
             self._process(read)
             self._process(reverse_complemental(read))
         self.g = defaultdict(dict)
         self.g_reverse = defaultdict(list)
-        for peak in self.peaks:
+        for peak in tqdm(self.peaks):
             for another_peak in self.peaks:
                 if peak[1:] == another_peak[:-1]:
                     edge = peak + another_peak[-1]
@@ -75,7 +70,7 @@ class Graph(object):
                         self.g[peak][another_peak] = (edge, self.edges[edge])
                         self.g_reverse[another_peak].append(peak)
 
-    def graph_viz2(self, file_name):
+    def graph_viz_reads(self, file_name):
         frame = ' %s -> %s [label="%s %d"];\n'
         with open(file_name, 'w') as file:
             file.write('digraph A{\n')
@@ -84,7 +79,8 @@ class Graph(object):
                     file.write(frame % (peak, out, outs[out][0], outs[out][1]))
             file.write('}')
 
-    def graph_viz(self, file_name):
+
+    def graph_viz_info(self, file_name):
         frame = ' %s[label=""]%s[label=""]\n %s -> %s[label=%s];\n'
         edge_chars_frame = '"L = %d Q = %d"'
         with open(file_name, 'w') as file:
@@ -103,14 +99,15 @@ class Graph(object):
         A and C are not allowed to connect
         B connects only to A and C
         """
-        used = []
+        used: List = []
         for peak, outs in self.g.items():
-            reversed_peak = self.g_reverse[peak]  # list of peaks, that are connected to past peak
-            if (len(outs) == 1 and len(reversed_peak) == 1):  # if peak is connected only to two other peaks
-                past = reversed_peak[0]  # because reversed peak is connected only to one past el, this el is past, str
-                next = list(outs.keys())[0]  # the same as past, str
+            reversed_peaks = self.g_reverse[peak]  # list of peaks, that are connected to past peak
+            if (len(outs) == 1 and len(reversed_peaks) == 1):  # if peak is connected only to two other peaks
+                past: str = reversed_peaks[0]  # because reversed peak is connected only to one past el, this el is past
+                next = list(outs.keys())[0]  # the same as past
                 next_ins = self.g_reverse[next]  # reversed connections of the next peak, list
                 past_outs = list(self.g[past].keys())  # connections of past read, list
+
                 if not ((past in next_ins) or (next in past_outs)):  # if not in a loop
                     out_edge = outs[next]  # tuple of edge code and its coverage
                     average_coverage = (out_edge[1] + list(self.g[past].values())[0][1]) // 2
@@ -120,6 +117,7 @@ class Graph(object):
                     self.g[past][next] = (new_edge, average_coverage)
                     self.g_reverse[next].remove(peak)
                     self.g_reverse[next].append(past)
+
         for peak in used:
             self.g.pop(peak)
             self.g_reverse.pop(peak)

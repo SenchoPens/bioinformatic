@@ -19,12 +19,13 @@ PNV = List[List[int]]
 
 
 def test_multi():
-    first = 'AGCGTA'
+    first = 'AC'
     a = MultiSequence(first, glob=True, debug=True, fancy=True)
-    a.add('AGTA')
-    a.add('ACTA')
+    a.add('AGC')
+    #a.add('ACTA')
     a.view()
     print(color_nucleotids(a.consensus()))
+
 
 class MultiSequence(object):
     def __init__(self, start:str, glob:bool=False, debug:bool=False, fancy:bool=False, indel=-1.5, mismatch=-2, match=2):
@@ -54,14 +55,17 @@ class MultiSequence(object):
         self.make_cons(start)
         self.rows: int = len(self.cons) + 1
 
+    def _fill_default(self):
+        self.cons.append(Counter())
+        for nucl in 'ACGT':
+            self.cons[-1][nucl] = self.mismatch
+        self.cons[-1]['-'] = self.indel
+
     def make_cons(self, start):
         self.aligned.append(start)
         for i, n in enumerate(start):
-            self.cons.append(Counter())
-            for nucl in 'ACGT':
-                self.cons[i][nucl] = self.mismatch
-            self.cons[i]['-'] = self.indel
-            self.cons[i][n] = self.match
+            self._fill_default()
+            self.cons[-1][n] = self.match
 
     def _debug_view(self):
         for i in self.cons:
@@ -99,9 +103,12 @@ class MultiSequence(object):
     def _fill(self, i, j):
         """ fill the M[i, j] cell with correct score and append its parent into way matrix """
         diag = self.matrix[i-1][j-1] + self.cons[i-1][self.seq[j-1]], (i-1, j-1)
+        if len(self.cons) < j:
+            self._fill_default()
         up = self.matrix[i-1][j] + self.cons[j-1]['-'], (i-1, j)
         left = self.matrix[i][j-1] + self.cons[i-1]['-'], (i, j-1)
         optimal = max(diag, up, left)
+
         if not self.glob and optimal[0] <= 0:
             optimal = (0, optimal[1])
         opt_score = optimal[0]
@@ -145,10 +152,12 @@ class MultiSequence(object):
         return result
 
     def make_pnv(self)->PNV:
+        raise NotImplementedError
         pnv: PNV = list()
         nucl_numbers = {}
         for i in self.aligned:
             pnv
+        return pnv
 
     @staticmethod
     def entropy(column: str):

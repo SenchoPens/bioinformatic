@@ -1,0 +1,6 @@
+data D(gene, J_gene, V_gene)
+data Comb(gene, length)
+data DGene(read, gene)
+data DRead(read, J_gene, V_gene)
+data DIndexRead(read, J_gene, V_gene, dataset)
+data Kmer(kmer, read)

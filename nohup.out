@@ -1,0 +1,618 @@
+[W 19:21:28.990 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 19:21:28.994 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 19:21:30.432 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 19:21:30.485 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 19:21:30.485 NotebookApp] 0 active kernels 
+[I 19:21:30.485 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=f13bdccd053563627a33edced73f19dfac7f24df1e2be471
+[I 19:21:30.486 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 19:21:30.488 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=f13bdccd053563627a33edced73f19dfac7f24df1e2be471
+[I 19:21:32.043 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 19:21:45.587 NotebookApp] Creating new notebook in 
+[I 19:21:48.176 NotebookApp] Kernel started: 31716051-eb2c-4c5b-bdae-14d1fbe4c1bc
+[W 19:21:48.835 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170502192128 (::1) 13.47ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 19:22:15.848 NotebookApp] Saving file at /Untitled.ipynb
+[I 19:23:48.039 NotebookApp] Saving file at /Untitled.ipynb
+[I 19:25:48.036 NotebookApp] Saving file at /Untitled.ipynb
+[I 19:27:48.033 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:13:20.583 NotebookApp] Saving file at /Untitled.ipynb
+[C 01:15:32.252 NotebookApp] received signal 15, stopping
+[I 01:15:32.425 NotebookApp] Shutting down kernels
+[I 01:15:32.426 NotebookApp] Kernel shutdown: 31716051-eb2c-4c5b-bdae-14d1fbe4c1bc
+[W 21:43:24.712 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 21:43:24.734 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 21:43:26.751 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 21:43:26.780 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 21:43:26.780 NotebookApp] 0 active kernels 
+[I 21:43:26.780 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=1f76b41f607b57fcca789ee2647df1bf48445d2ecff0d5f2
+[I 21:43:26.781 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:43:26.783 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=1f76b41f607b57fcca789ee2647df1bf48445d2ecff0d5f2
+[I 21:43:28.071 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[W 21:43:37.820 NotebookApp] 404 GET /favicon.ico (::1) 12.31ms referer=None
+[W 21:43:37.860 NotebookApp] 404 GET /favicon.ico (::1) 2.10ms referer=None
+[I 21:44:16.782 NotebookApp] Kernel started: 98b953b4-2115-4d95-b8b8-ea16b926e33e
+[W 21:44:17.242 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170503214324 (::1) 6.02ms referer=http://localhost:8888/notebooks/Untitled.ipynb
+[I 21:46:16.446 NotebookApp] Saving file at /contest.ipynb
+[I 21:48:16.449 NotebookApp] Saving file at /contest.ipynb
+[I 21:52:16.456 NotebookApp] Saving file at /contest.ipynb
+[I 21:54:16.445 NotebookApp] Saving file at /contest.ipynb
+[I 21:56:16.464 NotebookApp] Saving file at /contest.ipynb
+[I 21:58:16.449 NotebookApp] Saving file at /contest.ipynb
+[I 22:00:16.464 NotebookApp] Saving file at /contest.ipynb
+[I 22:04:16.442 NotebookApp] Saving file at /contest.ipynb
+[I 22:28:16.443 NotebookApp] Saving file at /contest.ipynb
+[I 22:30:16.440 NotebookApp] Saving file at /contest.ipynb
+[I 01:34:16.442 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 01:34:25.515 NotebookApp] Creating new notebook in 
+[I 01:34:27.584 NotebookApp] Kernel started: ac5501cf-8b72-4a27-b7e3-4f57837f70bb
+[W 01:34:27.714 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170503214324 (::1) 1.59ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 01:36:27.172 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:38:27.178 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:40:27.172 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:42:27.175 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:46:27.179 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:50:27.185 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:52:27.172 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:54:27.182 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:56:27.197 NotebookApp] Saving file at /Untitled.ipynb
+[I 01:58:27.173 NotebookApp] Saving file at /deBrujin.ipynb
+[I 02:00:26.715 NotebookApp] Saving file at /deBrujin.ipynb
+[C 02:05:06.003 NotebookApp] received signal 15, stopping
+[I 02:05:06.011 NotebookApp] Shutting down kernels
+[I 02:05:06.012 NotebookApp] Kernel shutdown: 98b953b4-2115-4d95-b8b8-ea16b926e33e
+[I 02:05:06.012 NotebookApp] Kernel shutdown: ac5501cf-8b72-4a27-b7e3-4f57837f70bb
+[W 19:56:20.144 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 19:56:20.148 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 19:56:22.703 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 19:56:22.762 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 19:56:22.762 NotebookApp] 0 active kernels 
+[I 19:56:22.762 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=5940d6f7f267d1564dc1ad65c641d78d450e15963fb72c35
+[I 19:56:22.762 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 19:56:22.764 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=5940d6f7f267d1564dc1ad65c641d78d450e15963fb72c35
+[I 19:56:23.418 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 19:56:31.761 NotebookApp] Kernel started: 2c7c1bfd-eddd-4d4f-bd06-ae476b150953
+[W 19:56:32.169 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170504195620 (::1) 7.39ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 19:58:31.421 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:00:31.552 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:04:31.401 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:06:31.443 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:08:31.403 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:14:31.409 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:16:31.405 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:18:31.420 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:22:31.408 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:24:31.422 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:26:31.404 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:28:31.403 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:30:31.408 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:32:31.409 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:34:31.412 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:36:31.420 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:38:31.412 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:40:31.408 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:42:31.416 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:44:31.413 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:00:31.424 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:02:31.421 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:04:31.407 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:06:31.472 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:08:31.403 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:10:31.439 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:12:31.411 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:14:31.396 NotebookApp] Saving file at /deBrujin.ipynb
+[W 17:18:23.295 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 17:18:25.099 NotebookApp] The port 8888 is already in use, trying another port.
+[I 17:18:25.155 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 17:18:25.208 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 17:18:25.208 NotebookApp] 0 active kernels 
+[I 17:18:25.208 NotebookApp] The Jupyter Notebook is running at: http://localhost:8889/?token=70f37181490981878f9b32ed318558d10a31c9fca97e8a9d
+[I 17:18:25.209 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:18:25.212 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8889/?token=70f37181490981878f9b32ed318558d10a31c9fca97e8a9d
+[I 17:18:28.507 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 17:18:41.263 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:18:53.146 NotebookApp] Kernel started: 1060b56f-4206-4425-8e10-df77ebf4fb65
+[W 17:18:53.651 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170505171823 (::1) 8.16ms referer=http://localhost:8889/notebooks/deBrujin.ipynb
+[I 17:20:52.996 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:22:52.995 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:24:53.004 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:26:53.000 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:28:53.172 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:30:53.143 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:32:52.986 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:34:52.999 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:36:53.009 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:38:52.980 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:40:52.977 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:42:52.973 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:44:52.997 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:46:52.986 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:48:53.021 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:50:52.986 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:04:53.020 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:06:52.987 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:08:52.987 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:10:52.984 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:20:52.988 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:22:52.998 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:24:52.998 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:26:53.003 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:28:52.980 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:30:52.992 NotebookApp] Saving file at /deBrujin.ipynb
+rm: cannot remove 'tmp.dot': Нет такого файла или каталога
+rm: cannot remove 'tmp.dot': Нет такого файла или каталога
+Error: Error: dot: can't open {dot}
+dot: can't open {dot}
+rm: cannot remove 'tmp.dot': Нет такого файла или каталога
+Error: dot: can't open {dot}
+rm: cannot remove 'tmp.dot': Нет такого файла или каталога
+Error: dot: can't open {dot}
+[I 19:32:52.992 NotebookApp] Saving file at /deBrujin.ipynb
+"/usr/lib64/qt5/plugins/okular/generators/okularGenerator_poppler.so"
+org.kde.okular.core: Output DPI: QSizeF(128.337, 130.629)
+org.kde.okular.core: request observer=0x254ccc0 1603x2220@0
+org.kde.okular.core: sending request observer=0x254ccc0 1603x2220@0 async == true isTile == false
+org.kde.okular.core: request observer=0x254ccc0 1603x2220@0
+org.kde.okular.core: request observer=0x254ccc0 1603x2220@0
+org.kde.okular.core: request observer=0x254ccc0 1589x2200@0
+org.kde.okular.core: sending request observer=0x254ccc0 1589x2200@0 async == true isTile == false
+org.kde.okular.core: request observer=0x254ccc0 1589x2200@0
+org.kde.okular.core: request observer=0x254ccc0 1589x2200@0
+org.kde.okular.core: request observer=0x252f830 166x230@0
+org.kde.okular.core: request observer=0x254ccc0 1589x2200@0
+org.kde.okular.core: sending request observer=0x252f830 166x230@0 async == true isTile == false
+org.kde.okular.core: request observer=0x254ccc0 1215x1683@0
+org.kde.okular.core: sending request observer=0x254ccc0 1215x1683@0 async == true isTile == false
+org.kde.okular.core: request observer=0x254ccc0 1215x1683@0
+org.kde.okular.core: request observer=0x254ccc0 1215x1683@0
+org.kde.okular.core: request observer=0x254ccc0 1215x1683@0
+org.kde.okular.core: request observer=0x254ccc0 911x1262@0
+org.kde.okular.core: request observer=0x254ccc0 911x1262@0
+org.kde.okular.core: request observer=0x254ccc0 911x1262@0
+org.kde.okular.core: request observer=0x254ccc0 911x1262@0
+org.kde.okular.core: sending request observer=0x254ccc0 911x1262@0 async == true isTile == false
+org.kde.okular.core: request observer=0x254ccc0 759x1052@0
+org.kde.okular.core: sending request observer=0x254ccc0 759x1052@0 async == true isTile == false
+org.kde.okular.core: request observer=0x254ccc0 759x1052@0
+org.kde.okular.core: request observer=0x254ccc0 759x1052@0
+org.kde.okular.core: request observer=0x254ccc0 759x1052@0
+Error: dot: can't open {dot}
+Error: dot: can't open {dot}
+[I 19:38:52.987 NotebookApp] Saving file at /deBrujin.ipynb
+Error: dot: can't open {dot}
+Error: dot: can't open {dot}
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 19:40:52.983 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:42:52.997 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:44:52.989 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 19:46:52.987 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:48:52.995 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 19:52:52.981 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:54:52.981 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 19:56:53.050 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:58:09.501 NotebookApp] Kernel interrupted: 1060b56f-4206-4425-8e10-df77ebf4fb65
+[I 19:58:41.139 NotebookApp] Kernel interrupted: 1060b56f-4206-4425-8e10-df77ebf4fb65
+[I 19:58:52.977 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:00:52.996 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:02:52.978 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:04:52.982 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:06:52.995 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:08:52.986 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:10:52.998 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:12:52.983 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:14:52.980 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:16:52.979 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:18:52.996 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:19:47.337 NotebookApp] Kernel interrupted: 1060b56f-4206-4425-8e10-df77ebf4fb65
+[I 20:20:16.073 NotebookApp] Kernel interrupted: 1060b56f-4206-4425-8e10-df77ebf4fb65
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:20:52.983 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:22:52.985 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:24:52.983 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:26:52.995 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:28:52.974 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[I 20:30:53.055 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5761.test.pdf.xml"
+[W 20:54:47.812 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 20:54:47.838 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 20:54:51.730 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 20:54:51.762 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 20:54:51.762 NotebookApp] 0 active kernels 
+[I 20:54:51.762 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=4852c14a4224df2cb0184c1dc359f9c4f4a7c8dc09d34df8
+[I 20:54:51.762 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 20:54:51.763 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=4852c14a4224df2cb0184c1dc359f9c4f4a7c8dc09d34df8
+[I 20:54:52.811 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 20:55:18.005 NotebookApp] Kernel started: a922d612-7854-4d43-b922-8d1f3d366296
+[W 20:55:18.905 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170505205447 (::1) 13.25ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 20:57:17.613 NotebookApp] Saving file at /deBrujin.ipynb
+[W 17:18:20.426 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 17:18:20.452 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 17:18:22.261 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 17:18:22.287 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 17:18:22.287 NotebookApp] 0 active kernels 
+[I 17:18:22.287 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=2789c017e18d40b152fdf9dad6cb02ea38c721a8fef82a65
+[I 17:18:22.288 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:18:22.290 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=2789c017e18d40b152fdf9dad6cb02ea38c721a8fef82a65
+[I 17:18:23.374 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 17:18:33.500 NotebookApp] Kernel started: 38793a77-ca50-4ef5-86eb-a389b9e9237d
+[W 17:18:34.062 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170506171820 (::1) 7.60ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 17:20:33.322 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:22:33.322 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:24:33.352 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:26:33.318 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:28:33.321 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:30:33.302 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:32:33.301 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:34:33.299 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:36:33.315 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:38:33.306 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:40:33.319 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:42:33.327 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:44:33.332 NotebookApp] Saving file at /deBrujin.ipynb
+[I 17:46:33.323 NotebookApp] Saving file at /deBrujin.ipynb
+[I 18:50:33.318 NotebookApp] Saving file at /deBrujin.ipynb
+[I 18:52:33.305 NotebookApp] Saving file at /deBrujin.ipynb
+[I 18:54:33.317 NotebookApp] Saving file at /deBrujin.ipynb
+[I 18:56:33.302 NotebookApp] Saving file at /deBrujin.ipynb
+[I 18:58:33.293 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:02:33.338 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:04:33.325 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:06:33.303 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:08:33.304 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:10:33.299 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:12:33.302 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:12:47.876 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:14:33.305 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:16:33.300 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:18:33.300 NotebookApp] Saving file at /deBrujin.ipynb
+"/usr/lib64/qt5/plugins/okular/generators/okularGenerator_poppler.so"
+org.kde.okular.core: Output DPI: QSizeF(128.337, 130.629)
+org.kde.okular.core: request observer=0xad4690 747x868@0
+org.kde.okular.core: sending request observer=0xad4690 747x868@0 async == true isTile == false
+org.kde.okular.core: request observer=0xad4690 747x868@0
+org.kde.okular.core: request observer=0xad4690 747x868@0
+org.kde.okular.core: request observer=0xac9250 60x70@0
+org.kde.okular.core: sending request observer=0xac9250 60x70@0 async == true isTile == false
+[I 19:24:33.322 NotebookApp] Saving file at /deBrujin.ipynb
+detected kglobalaccel restarting, re-registering all shortcut keys
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/6189.deBrujin_test1.pdf.xml"
+[I 19:28:33.317 NotebookApp] Saving file at /deBrujin.ipynb
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/6189.deBrujin_test1.pdf.xml"
+"/usr/lib64/qt5/plugins/okular/generators/okularGenerator_poppler.so"
+org.kde.okular.core: Output DPI: QSizeF(128.337, 130.629)
+org.kde.okular.core: request observer=0xfec780 747x868@0
+org.kde.okular.core: sending request observer=0xfec780 747x868@0 async == true isTile == false
+org.kde.okular.core: request observer=0xfec780 747x868@0
+org.kde.okular.core: request observer=0xfec780 747x868@0
+org.kde.okular.core: request observer=0x1015230 60x70@0
+org.kde.okular.core: sending request observer=0x1015230 60x70@0 async == true isTile == false
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/6189.deBrujin_test1.pdf.xml"
+[I 19:30:33.315 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:32:33.320 NotebookApp] Saving file at /deBrujin.ipynb
+"/usr/lib64/qt5/plugins/okular/generators/okularGenerator_poppler.so"
+org.kde.okular.core: Output DPI: QSizeF(128.337, 130.629)
+org.kde.okular.core: request observer=0x23c40b0 747x832@0
+org.kde.okular.core: sending request observer=0x23c40b0 747x832@0 async == true isTile == false
+org.kde.okular.core: request observer=0x23c40b0 747x832@0
+org.kde.okular.core: request observer=0x23c40b0 747x832@0
+org.kde.okular.core: request observer=0x2419120 60x67@0
+org.kde.okular.core: sending request observer=0x2419120 60x67@0 async == true isTile == false
+org.kde.okular.core: About to save document info to "/home/sencho/.local/share/okular/docdata/5511.deBrujin_test1.pdf.xml"
+[I 19:34:33.322 NotebookApp] Saving file at /deBrujin.ipynb
+[I 19:36:33.296 NotebookApp] Saving file at /deBrujin.ipynb
+/bin/sh: asdf: command not found
+[I 19:40:33.295 NotebookApp] Saving file at /deBrujin.ipynb
+[W 20:08:42.088 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 20:08:42.113 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 20:08:44.438 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 20:08:44.458 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 20:08:44.458 NotebookApp] 0 active kernels 
+[I 20:08:44.458 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=303030b596c7719c2880b3376a6c1d0af550cdc90b894c45
+[I 20:08:44.458 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 20:08:44.461 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=303030b596c7719c2880b3376a6c1d0af550cdc90b894c45
+[I 20:08:45.548 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 20:08:53.630 NotebookApp] Kernel started: a52fccf9-49ec-42f1-ad6b-65726d941dfa
+[W 20:08:53.996 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170506200842 (::1) 7.34ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 20:10:53.431 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:12:53.410 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:14:53.406 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:16:53.406 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:18:53.409 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:20:53.409 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:22:53.394 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:24:53.397 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:26:53.400 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:28:53.429 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:30:53.400 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:32:53.398 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:34:53.405 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:50:53.411 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:52:53.403 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:54:53.408 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:56:53.425 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:58:53.428 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:00:53.407 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:02:57.029 NotebookApp] Saving file at /deBrujin.ipynb
+[C 21:03:07.362 NotebookApp] received signal 15, stopping
+[I 21:03:07.365 NotebookApp] Shutting down kernels
+[I 21:03:07.466 NotebookApp] Kernel shutdown: a52fccf9-49ec-42f1-ad6b-65726d941dfa
+[W 22:38:55.681 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 22:38:55.706 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 22:38:58.055 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 22:38:58.093 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 22:38:58.093 NotebookApp] 0 active kernels 
+[I 22:38:58.093 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=58bdbe6b13e88646c4309bf1ccd917799976061f59c03a40
+[I 22:38:58.093 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:38:58.097 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=58bdbe6b13e88646c4309bf1ccd917799976061f59c03a40
+[I 22:38:59.206 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 22:39:16.214 NotebookApp] Kernel started: 87a9229c-4da3-4a1b-a874-f2b400487e5d
+[W 22:39:16.343 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170506223855 (::1) 7.46ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 22:41:15.831 NotebookApp] Saving file at /deBrujin.ipynb
+[I 22:43:15.824 NotebookApp] Saving file at /deBrujin.ipynb
+[I 22:45:15.828 NotebookApp] Saving file at /deBrujin.ipynb
+[I 22:47:15.846 NotebookApp] Saving file at /deBrujin.ipynb
+[I 22:49:15.848 NotebookApp] Saving file at /deBrujin.ipynb
+[I 22:51:15.846 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:05:28.862 NotebookApp] 302 GET / (127.0.0.1) 0.37ms
+[I 23:05:28.864 NotebookApp] 302 GET /tree? (127.0.0.1) 0.68ms
+[W 23:05:28.889 NotebookApp] 403 POST /api/kernels (127.0.0.1): '_xsrf' argument missing from POST
+[W 23:05:28.891 NotebookApp] 403 POST /api/kernels (127.0.0.1) 1.77ms referer=None
+[I 23:07:57.985 NotebookApp] 302 GET / (127.0.0.1) 0.43ms
+[I 23:07:57.986 NotebookApp] 302 GET /tree? (127.0.0.1) 0.56ms
+[I 23:07:58.003 NotebookApp] Kernel started: a350ccd4-3d46-4822-bcd5-1a91dad27337
+[W 23:07:58.027 NotebookApp] No session ID specified
+[I 23:09:15.832 NotebookApp] Saving file at /deBrujin.ipynb
+[W 23:47:35.430 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 23:47:36.766 NotebookApp] The port 8888 is already in use, trying another port.
+[I 23:47:36.767 NotebookApp] The port 8889 is already in use, trying another port.
+[I 23:47:36.997 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 23:47:37.008 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 23:47:37.008 NotebookApp] 0 active kernels 
+[I 23:47:37.009 NotebookApp] The Jupyter Notebook is running at: http://localhost:8890/?token=32130df322bcc102544ed3e5fc2df9cc17083522eb29be74
+[I 23:47:37.009 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 23:47:37.011 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8890/?token=32130df322bcc102544ed3e5fc2df9cc17083522eb29be74
+[I 23:47:57.389 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[W 23:48:28.518 NotebookApp] Notebook deBrujin.ipynb is not trusted
+[I 23:48:29.741 NotebookApp] Kernel started: 4d7433a8-d1f6-488a-9b33-7c15df8ecdad
+[W 23:48:30.020 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170507234735 (::1) 13.04ms referer=http://localhost:8890/notebooks/deBrujin.ipynb
+[I 23:50:29.370 NotebookApp] Saving file at /deBrujin.ipynb
+[W 23:50:29.371 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 23:52:29.382 NotebookApp] Saving file at /deBrujin.ipynb
+[W 23:52:29.382 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 23:54:29.370 NotebookApp] Saving file at /deBrujin.ipynb
+[W 23:54:29.370 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 23:56:29.388 NotebookApp] Saving file at /deBrujin.ipynb
+[W 23:56:29.389 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 00:00:29.364 NotebookApp] Saving file at /deBrujin.ipynb
+[W 00:00:29.364 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 00:14:29.908 NotebookApp] Saving file at /deBrujin.ipynb
+[W 00:14:29.908 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 00:28:29.898 NotebookApp] Saving file at /deBrujin.ipynb
+[W 00:28:29.911 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 00:30:29.900 NotebookApp] Saving file at /deBrujin.ipynb
+[W 00:30:29.901 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 00:32:29.892 NotebookApp] Saving file at /deBrujin.ipynb
+[W 00:32:29.893 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[W 00:36:39.451 NotebookApp] Notebook deBrujinFast.ipynb is not trusted
+[I 00:36:40.474 NotebookApp] Kernel started: 5d8d0f56-48eb-4d44-b982-9023e39aa32f
+[W 00:36:41.498 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170507234735 (::1) 29.50ms referer=http://localhost:8890/notebooks/deBrujinFast.ipynb
+[I 10:13:46.370 NotebookApp] Saving file at /deBrujin.ipynb
+[W 10:13:46.370 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 10:13:56.790 NotebookApp] Saving file at /deBrujinFast.ipynb
+[W 10:13:56.790 NotebookApp] Saving untrusted notebook deBrujinFast.ipynb
+[I 19:35:14.129 NotebookApp] Kernel started: db792f53-157c-4412-8e00-8701c6b91545
+[W 19:35:14.592 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170507234735 (::1) 161.45ms referer=http://localhost:8890/notebooks/unimportant_stuff.ipynb
+[I 19:37:13.931 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 19:39:13.896 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 19:41:13.909 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 19:43:13.900 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 19:45:13.906 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 19:47:13.904 NotebookApp] Saving file at /unimportant_stuff.ipynb
+[I 19:53:58.677 NotebookApp] Saving file at /deBrujin.ipynb
+[W 19:53:58.677 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 20:01:58.875 NotebookApp] Saving file at /deBrujin.ipynb
+[W 20:01:58.876 NotebookApp] Saving untrusted notebook deBrujin.ipynb
+[I 20:03:58.667 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:05:58.667 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:07:58.663 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:09:58.664 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:11:58.675 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:13:58.663 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:15:58.681 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:17:58.685 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:23:58.699 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:25:58.670 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:27:58.674 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:29:58.674 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:35:58.684 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:37:58.673 NotebookApp] Saving file at /deBrujin.ipynb
+[I 20:39:58.672 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:27:55.954 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:29:58.691 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:32:01.187 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:32:01.357 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:33:58.690 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:35:58.714 NotebookApp] Saving file at /deBrujin.ipynb
+[I 21:37:58.679 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:56:47.304 NotebookApp] Saving file at /deBrujin.ipynb
+[C 23:57:08.416 NotebookApp] received signal 15, stopping
+[I 23:57:08.420 NotebookApp] Shutting down kernels
+[C 23:57:08.416 NotebookApp] received signal 15, stopping
+[I 23:57:08.426 NotebookApp] Shutting down kernels
+[I 23:57:08.522 NotebookApp] Kernel shutdown: 87a9229c-4da3-4a1b-a874-f2b400487e5d
+[I 23:57:08.522 NotebookApp] Kernel shutdown: a350ccd4-3d46-4822-bcd5-1a91dad27337
+[I 23:57:08.527 NotebookApp] Kernel shutdown: 4d7433a8-d1f6-488a-9b33-7c15df8ecdad
+[I 23:57:08.528 NotebookApp] Kernel shutdown: 5d8d0f56-48eb-4d44-b982-9023e39aa32f
+[I 23:57:08.528 NotebookApp] Kernel shutdown: db792f53-157c-4412-8e00-8701c6b91545
+[W 22:55:42.889 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 22:55:42.915 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 22:55:44.807 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 22:55:44.834 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 22:55:44.834 NotebookApp] 0 active kernels 
+[I 22:55:44.834 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=bf7c7fc73831bc40eb89049bfdee87e58e008655279f91e8
+[I 22:55:44.834 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:55:44.837 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=bf7c7fc73831bc40eb89049bfdee87e58e008655279f91e8
+[I 22:55:45.666 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 22:55:55.413 NotebookApp] Kernel started: 3ee7f26a-a2f7-4bc5-acf3-74768bb992c0
+[W 22:55:56.630 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170601225542 (::1) 7.53ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 22:57:53.945 NotebookApp] Saving file at /deBrujin.ipynb
+[I 22:59:53.972 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:01:53.931 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:03:53.960 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:05:53.938 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:09:53.939 NotebookApp] Saving file at /deBrujin.ipynb
+[I 23:11:19.665 NotebookApp] Saving file at /deBrujin.ipynb
+[C 01:59:32.600 NotebookApp] received signal 15, stopping
+[I 01:59:33.333 NotebookApp] Shutting down kernels
+[I 01:59:33.333 NotebookApp] Kernel shutdown: 3ee7f26a-a2f7-4bc5-acf3-74768bb992c0
+[W 12:56:57.571 NotebookApp] server_extensions is deprecated, use nbserver_extensions
+[I 12:56:57.599 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 12:57:01.176 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 12:57:01.187 NotebookApp] Serving notebooks from local directory: /home/sencho/Projects/bio
+[I 12:57:01.187 NotebookApp] 0 active kernels 
+[I 12:57:01.187 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=90f1cb5bc5da206e64bf57131090e2ec6dfef184fede4136
+[I 12:57:01.187 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:57:01.190 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=90f1cb5bc5da206e64bf57131090e2ec6dfef184fede4136
+[I 12:57:02.294 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 12:57:09.308 NotebookApp] Kernel started: d1e1cd8c-668c-4598-b4c6-419dc054e0c3
+[W 12:57:10.182 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170603125657 (::1) 38.02ms referer=http://localhost:8888/notebooks/deBrujin.ipynb
+[I 12:59:09.126 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:05:09.095 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:07:09.074 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:09:09.105 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:11:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:13:09.084 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:15:09.088 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:17:09.093 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:19:09.079 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:21:09.087 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:23:09.110 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:25:09.090 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:27:09.094 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:29:09.077 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:31:09.076 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:33:09.074 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:35:09.091 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:37:09.086 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:39:09.095 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:41:09.101 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:43:09.094 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:45:09.088 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:47:09.083 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:49:09.096 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:51:09.105 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:53:09.076 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:55:09.109 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:57:09.091 NotebookApp] Saving file at /deBrujin.ipynb
+[I 13:59:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:00:18.303 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:01:09.087 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:03:09.093 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:05:09.086 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:07:09.083 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:09:09.092 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:11:09.093 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:13:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:15:09.088 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:17:09.103 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:19:09.090 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:21:09.088 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:23:09.116 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:25:09.081 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:27:09.085 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:29:09.086 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:31:09.095 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:33:09.082 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:35:09.092 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:37:09.097 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:39:09.098 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:41:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:43:09.087 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:45:09.083 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:47:09.093 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:49:09.109 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:51:09.097 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:53:09.090 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:55:09.097 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:57:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 14:59:09.103 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:01:09.087 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:03:09.103 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:05:09.082 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:07:09.086 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:09:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:11:09.084 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:13:09.084 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:15:09.093 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:17:09.082 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:19:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:21:09.129 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:23:09.087 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:25:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:27:09.084 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:29:09.081 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:31:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:33:09.086 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:35:09.095 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:37:09.090 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:39:09.098 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:41:09.084 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:43:09.090 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:45:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:47:09.108 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:49:09.083 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:51:09.089 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:53:09.083 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:55:09.085 NotebookApp] Saving file at /deBrujin.ipynb
+[I 15:57:09.106 NotebookApp] Saving file at /deBrujin.ipynb

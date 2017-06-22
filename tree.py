@@ -22,10 +22,9 @@ def main():
         print(tree.newick_format())
 
 class Tree(object):
-    def __init__(self, matrix=[], reads=[]):
-        if matrix:
-            self.matrix = matrix
-        else:
+    def __init__(self, matrix=None, reads=None):
+        self.matrix = matrix
+        if matrix is None:
             self.matrix = self.build_matrix(reads)
         self.newick = {}
         self.names = list(string.ascii_letters[:len(self.matrix)])

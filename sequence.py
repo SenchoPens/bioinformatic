@@ -13,14 +13,34 @@ Pos = Tuple[int, int]
 
 def test():
     #a = Sequence('ACCTGACTCCAG', 'CCAGATTGCAA')
-    a = Sequence('ACA', 'AGCA')
+    print('Local')
+    first = 'ACCTGACTCCAG'
+    second = 'CCAGATTGCAA'
+    secbet = 'CCTGACTGCAA'
+    a = Sequence(first, second)
     a.make_matrix()
-    a.visualize()
-    a.make_cool_matrix()
+    #a.visualize()
+    #a.make_cool_matrix()
     a.build()
-    print(a.seq1, a.seq2)
+    #print(a.seq1, a.seq2)
     a.concatenate()  # expected: A
     print(a.result)
+    print(a.max_score)
+    c = Sequence(first, secbet)
+    print(c.make_lightweight_matrix())
+    print(c.max_score)
+    '''
+    print('Global')
+    sec_glob = 'ACTC'
+    b = Sequence(first, sec_glob)
+    b.make_matrix()
+    b.build()
+    b.concatenate()
+    b.visualize()
+    b.make_matrix()
+    print(b.seq1, b.seq2)
+    print(b.result)
+    '''
 
 
 class Sequence(object):
@@ -78,13 +98,14 @@ class Sequence(object):
             self.max_score, self.max_pos = optimal
 
     def make_lightweight_matrix(self):
-        """ algorithm to know the max_score (without memoising way) """
+        """Algorithm to know the max_score without memoising the optimal path."""
         self.matrix: Matrix = [[0 for j in range(self.cols)] for i in range(self.rows)]
         self.max_score = 0
         for i in range(1, self.rows):  # filling
             for j in range(1, self.cols):
                 self._lightweight_fill(i, j)
             self.matrix[1], self.matrix[0] = self.matrix[0], self.matrix[1]
+        return self.max_score
 
     def _lightweight_fill(self, i, j):
         if self.a[i-1] == self.b[j-1]:
@@ -100,7 +121,7 @@ class Sequence(object):
             self.max_score = opt_score
 
     def visualize(self):
-        """ a debug tool """
+        """Debug tool."""
         print('-' * self.cols * 3)
         for i in self.matrix:
             print(i)
@@ -190,7 +211,7 @@ class Sequence(object):
         if isinstance(other, Sequence):
             return self.max_score > other.max_score
         else:
-            raise TypeError('unorderable types: Sequence > %s' % type(other))
+            raise TypeError('Unorderable types: Sequence > %s' % type(other))
 
 
 def reverse_complemental(read):
@@ -199,7 +220,6 @@ def reverse_complemental(read):
     rc_read.reverse()
     rc_read = ''.join(rc_read)
     return rc_read
-
 
 if __name__ == '__main__':
     test()

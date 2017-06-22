@@ -1,6 +1,15 @@
 from itertools import islice
 
 
+def read_fa_iter(file, k):
+    next(file)
+    pos = 0
+    for line in file:
+        w = ''
+        if pos + k > len(line):
+            w += line[pos:len(line)]
+        yield w
+
 def read_fa(file):
     next(file)
     res = []
@@ -25,10 +34,12 @@ def read_fq2(file):
         if not (quality or name):
             yield line.replace('\n', '')
 
+def read_dna(file):
+    for line in file:
+        yield line.replace('\n', '')
+
 def read_nex(file):
     res = []
     for line in file:
         res.append(line[line.find(' '):])
     return res
-
-

@@ -1,0 +1,15 @@
+digraph A{
+ ABD[label=""]
+ BCC[label=""]
+
+ CDA[label=""]
+  CDA -> DAB[label="L = 4 Q = 1"];
+ BCD[label=""]
+  BCD -> CDA[label="L = 4 Q = 1"];
+ ABC[label=""]
+  ABC -> BCC[label="L = 4 Q = 1"];
+  ABC -> BCD[label="L = 4 Q = 1"];
+ DAB[label=""]
+  DAB -> ABD[label="L = 4 Q = 1"];
+  DAB -> ABC[label="L = 4 Q = 1"];
+}

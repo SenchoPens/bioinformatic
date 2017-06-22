@@ -1,0 +1,6 @@
+digraph A{
+ TGA -> TCA [label="TGATCA 2"];
+ TCA -> CTG [label="TCACCTG 1"];
+ TCA -> TGA [label="TAGTGA 1"];
+ CTG -> TGA [label="CTGA 1"];
+}
