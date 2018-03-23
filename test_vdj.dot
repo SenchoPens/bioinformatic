@@ -1,0 +1,5 @@
+strict digraph  {
+	node [label="\N"];
+	1 -> 2	 [len=100];
+	2 -> 3	 [len=10];
+}

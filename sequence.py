@@ -29,7 +29,6 @@ def test():
     c = Sequence(first, secbet)
     print(c.make_lightweight_matrix())
     print(c.max_score)
-    '''
     print('Global')
     sec_glob = 'ACTC'
     b = Sequence(first, sec_glob)
@@ -40,7 +39,6 @@ def test():
     b.make_matrix()
     print(b.seq1, b.seq2)
     print(b.result)
-    '''
 
 
 class Sequence(object):
